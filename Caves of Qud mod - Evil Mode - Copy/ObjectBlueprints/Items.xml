@@ -68,7 +68,7 @@ Items
 
 
 
-<part Name="Render" DisplayName="{{w|brinestalk}} {{y|spear}}" Tile="Textures/Spear.png" ColorString="&amp;w" DetailColor="w" />
+<part Name="Render" DisplayName="{{w|brinestalk}} {{y|spear}}" Tile="Items/Spear.png" ColorString="&amp;w" DetailColor="w" />
     <part Name="MeleeWeapon" MaxStrengthBonus="1" BaseDamage="1d2" />
     <part Name="ThrownWeapon" Penetration="1" Damage="1d2" Attributes="ShortBlades" />
     <part Name="Commerce" Value="5" />
@@ -83,7 +83,7 @@ Items
 
 <object Name="Player_EvilQud WitchwoodSpear" Inherits = "Player_EvilQud BaseSpear" BaseDamage = "2d2" MaxStrengthBonus = "8">
 
-<part Name="Render" DisplayName="{{R|Witchwood}} Spear" Tile="Textures/Spear.png" ColorString="&amp;r" DetailColor="R" />
+<part Name="Render" DisplayName="{{R|Witchwood}} Spear" Tile="Items/Spear.png" ColorString="&amp;r" DetailColor="R" />
 <part Name="Description" Short="The arm of a witchwood tree, severed and sanded down to a fine point" />
 <part Name="MeleeWeapon" MaxStrengthBonus="3" BaseDamage="2d2" Penetration = "3" />
 <part Name="ThrownWeapon" Penetration="3" Damage="2d2" Attributes="ShortBlades" />
@@ -91,7 +91,7 @@ Items
 
 <object Name="Player_EvilQud StoneSpear" Inherits = "Player_EvilQud BaseSpear" BaseDamage = "1d5" MaxStrengthBonus = "10">
 
-<part Name="Render" DisplayName="{{lg|Stone}} Spear" Tile="Textures/Spear.png" ColorString="&amp;b" DetailColor="dg" />
+<part Name="Render" DisplayName="{{lg|Stone}} Spear" Tile="Items/Spear.png" ColorString="&amp;b" DetailColor="dg" />
 <part Name="Description" Short="Bands of wood cradle its brother in stone, its jagged rocky claw primed to strike" />
 <part Name="MeleeWeapon" MaxStrengthBonus="2" BaseDamage="1d5" Penetration = "4" />
 <part Name="ThrownWeapon" Penetration="4" Damage="1d5" Attributes="ShortBlades" />
@@ -99,7 +99,7 @@ Items
 
 <object Name="Player_EvilQud BronzeSpear" Inherits = "Player_EvilQud BaseSpear" BaseDamage = "2d3" MaxStrengthBonus = "12">
 
-<part Name="Render" DisplayName="{{B|Bronze}} Spear" Tile="Textures/Spear.png" ColorString="&amp;B" DetailColor="b" />
+<part Name="Render" DisplayName="{{B|Bronze}} Spear" Tile="Items/Spear.png" ColorString="&amp;B" DetailColor="b" />
 <part Name="Description" Short="The arm of a witchwood tree, severed and sanded down to a fine point" />
 <part Name="MeleeWeapon" MaxStrengthBonus="12" BaseDamage="2d3" Penetration = "4" />
 <part Name="ThrownWeapon" Penetration="4" Damage="2d3" Attributes="ShortBlades" />
@@ -110,7 +110,7 @@ Items
 <object Name="Player_EvilQud BrinestalkPike" Inherits="Player_EvilQud BaseSpear" BaseDamage = "1d2" MaxStrengthBonus = "6">
 
 
-<part Name="Render" DisplayName="{{B|Brinestalk}} Pike" Tile="Items/sw_poison_tipped_spear.bmp" ColorString="&amp;b" DetailColor="B" />
+<part Name="Render" DisplayName="{{B|Brinestalk}} Pike" Tile="Items/Spear.png" ColorString="&amp;b" DetailColor="B" />
 <part Name="Description" Short="Twine dances hand in hand with its brinestalk friends, paving a long bladed point" />
 <part Name="MeleeWeapon" MaxStrengthBonus="6" BaseDamage="1d2" Penetration = "2" />
 <part Name="ThrownWeapon" Penetration="2" Damage="1" Attributes="ShortBlades" />
@@ -118,7 +118,7 @@ Items
 
 <object Name="Player_EvilQud WitchwoodPike" Inherits = "Player_EvilQud BaseSpear" BaseDamage = "1d3" MaxStrengthBonus = "6">
 
-<part Name="Render" DisplayName="{{R|Witchwood}} Pike" Tile="Items/sw_poison_tipped_spear.bmp" ColorString="&amp;r" DetailColor="R" />
+<part Name="Render" DisplayName="{{R|Witchwood}} Pike" Tile="Items/Spear.png" ColorString="&amp;r" DetailColor="R" />
 <part Name="Description" Short="A column of a grand witchwood tree, severed and sanded down to a long, fine point" />
 <part Name="MeleeWeapon" MaxStrengthBonus="6" BaseDamage="1d3" Penetration = "3" />
 <part Name="ThrownWeapon" Penetration="3" Damage="2" Attributes="ShortBlades" />
@@ -126,7 +126,7 @@ Items
 
 <object Name="Player_EvilQud StonePike" Inherits = "Player_EvilQud BaseSpear" BaseDamage = "1d4" MaxStrengthBonus = "">
 
-<part Name="Render" DisplayName="{{lg|Stone}} Spear" Tile="Items/sw_poison_tipped_spear.bmp" ColorString="&amp;b" DetailColor="dg" />
+<part Name="Render" DisplayName="{{lg|Stone}} Spear" Tile="Textures/Spear.png" ColorString="&amp;b" DetailColor="dg" />
 <part Name="Description" Short="The arm of a witchwood tree, severed and sanded down to a fine point" />
 <part Name="MeleeWeapon" MaxStrengthBonus="8" BaseDamage="1d4" Penetration = "4" />
 <part Name="ThrownWeapon" Penetration="4" Damage="2" Attributes="ShortBlades" />

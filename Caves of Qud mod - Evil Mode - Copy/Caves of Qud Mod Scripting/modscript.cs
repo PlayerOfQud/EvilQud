@@ -3,48 +3,56 @@ using System.Collections.Generic;
 using System.Reflection.Metadata;
 using System.Runtime;
 using System.Security;
-using items;
+using Qud;
+using Qud.API;
+using Qud.UI;
+using System.IO;
+using System;
+using XRL.World;
+using XRL.World.Parts;
+
+
+
+
 
 //Spear Attack Event
 
-/*
-namespace ReachAttack;
 
-[Serializable]
-
-public void ReachAttack(int distance){
-    
-    Part ReachAttack = new Part();
-
-    if (Object.attackevent == true && Object.range <= distance)
+namespace Scripting
+{
+    public class Script
     {
-        return doDamage;
+        
+
+
+     public bool AddSkill(GameObject GO)
+    {
+      ActivatedAbilities part = GO.GetPart("ActivatedAbilities") as ActivatedAbilities;
+      if (part != null)
+      {
+        this.ActivatedAbilityID = part.AddAbility("Pierce [&Wattack&y]", "CommandReachAttack", "Skill", -1, false, false, "You attack with your spear from a distance", "-", false, false);
+        this.Ability = part.AbilityByGuid[this.ActivatedAbilityID];
+      }
+      return true;
+    }
+
+    public bool RemoveSkill(GameObject GO)
+    {
+      if (this.ActivatedAbilityID != Guid.Empty)
+        (GO.GetPart("ActivatedAbilities") as ActivatedAbilities).RemoveAbility(this.ActivatedAbilityID);
+      return true;
+    }
+            
+
+
     }
 
 
+    public class CommandReachAttack
+    {
+        
+    }
+      
+
 }
 
-public void CraftMenu()
-{
-    RenderRect(User.resolutionX*0.9, User.resolutionY*0.90);
-
-
-}
-
-public void CraftMenuInput(String[] items)
-{
-    //for ...
-    Object.removeItem(Object.inventory,items[i]);
-}
-
-public void CraftMenuOutput();
-
-public String Recipe()
-{
-    //
-
-
-    String CraftedItem = "";
-    return CraftedItem;
-}
-*/
