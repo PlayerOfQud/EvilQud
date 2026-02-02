@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!-- ***Hidden function skills*** -->
+
+<skill Name = "Reach Attack" Description = "Thrust with your spear">
+
+</skill>
+
+<skill Name = "Smelt" Description = "Forge metals">
+
+</skill>
+
+<skill Name = "Craft" Description = "Make items">
+
+</skill>
+
+<!-- ***Spear skills category*** -->
+
+<skill Name = "Spear" Description = "You are proficient in fighting with spears">
+
+</skill>
+
+<skill Name = "Rending Twist" Description = "">
+
+</skill>
+
+<!-- ***Unarmed Skills category*** -->
+
+<!-- ***Technique Skills category*** -->
+
+<!-- ***Artistry skills category*** -->
+
+<skill Name = "Artistry" Description = "You are skilled in the fine arts">
+
+</skill>
+
+<skill Name = "Theatrics" Description = "You perform ostentatious shows of creativity">
+
+</skill>

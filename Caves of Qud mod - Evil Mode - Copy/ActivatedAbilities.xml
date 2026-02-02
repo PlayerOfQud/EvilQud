@@ -1,0 +1,9 @@
+<ability Command="ReachAttack">
+<description>
+<p>You lunge with your spear.</p>
+<br/>
+<statline Name="Damage"/>
+<statline Name="Range"/>
+</description>
+<UITile Tile="Abilities/abil_run_over.bmp" Foreground="W" Detail="B"/>
+</ability>
