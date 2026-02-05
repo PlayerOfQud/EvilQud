@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<objects>
+
+<!--
+****
+1st object line is file start
+****
+-->
+
+
+<!--
+****
+Base Objects
+****
+-->
+
+
+
+<!--
+*****
+Object Types
+*****
+-->
+
+<object Name = "Player_EvilQud BaseSpear" Inherits = "MeleeWeapon">
+
+<tag Name="BaseObject" Value="*noinherit" />
+<tag Name="Mods" Value="BladeMods,WeaponMods,CommonMods" />
+	<part Name="Physics" Weight="3" UsesTwoSlots="true" />
+	<part Name="Commerce" Value="10" />
+	<part Name="Render" Tile="Textures/Spear.img" DetailColor="w" />
+    <part Name="MeleeWeapon" Skill="ShortBlades" />
+    <part Name="Examiner" Alternate="UnknownKnife" />
+		<tag Name="DynamicObjectsTable:Daggers" />
+    <tag Name="SwingSound" Value="Sounds/Melee/shortBlades/sfx_melee_shortSword_metal_swing" />
+    <tag Name="BlockedSound" Value="Sounds/Melee/multiUseBlock/sfx_melee_metal_blocked" />
+	  <tag Name="EquipSound" Value="Sounds/Equip/sfx_equip_weapon_blade_short_metal_light" />
+	  <xtagThrowVFX
+			  Speed="500"
+			  Orientation="45"
+			  Rotation="0"
+			  Arc="0"
+	  />
+
+
+
+</object>
+
+<objects Name = "Player_BaseMaterial" Inherits = "BaseObject">
+
+<part Name = "Physics" Weight = "1" IsReal = "true" Takeable = "true"  />
+
+</object>
+
+
+
+
+
+<!--
+*******
+Items
+*******
+-->
+
+<!-- ***Spears*** -->
+
+<object Name="Player_EvilQud BrinestalkSpear" Inherits="Player_EvilQud BaseSpear" BaseDamage = "1d3" MaxStrengthBonus = "8">
+
+
+
+<part Name="Render" DisplayName="{{w|brinestalk}} {{y|spear}}" Tile="Items/Spear.png" ColorString="&amp;w" DetailColor="w" />
+    <part Name="MeleeWeapon" MaxStrengthBonus="1" BaseDamage="1d2" />
+    <part Name="ThrownWeapon" Penetration="1" Damage="1d2" Attributes="ShortBlades" />
+    <part Name="Commerce" Value="5" />
+    <part Name="Description" Short="Twine dances around a rod of delicate brinestalk, terminating at a hardened point" />
+    <part Name="Metal" />
+    <tag Name="NoAIEquipAsThrownWeapon" />
+    <tag Name="HideThrownWeaponPerformance" />
+    <tag Name="Tier" Value="0" />
+		<stag Name="Contemporary" />
+
+</object>
+
+<object Name="Player_EvilQud WitchwoodSpear" Inherits = "Player_EvilQud BaseSpear" BaseDamage = "2d2" MaxStrengthBonus = "8">
+
+<part Name="Render" DisplayName="{{R|Witchwood}} Spear" Tile="Items/Spear.png" ColorString="&amp;r" DetailColor="R" />
+<part Name="Description" Short="The arm of a witchwood tree, severed and sanded down to a fine point" />
+<part Name="MeleeWeapon" MaxStrengthBonus="3" BaseDamage="2d2" Penetration = "3" />
+<part Name="ThrownWeapon" Penetration="3" Damage="2d2" Attributes="ShortBlades" />
+</object>
+
+<object Name="Player_EvilQud StoneSpear" Inherits = "Player_EvilQud BaseSpear" BaseDamage = "1d5" MaxStrengthBonus = "10">
+
+<part Name="Render" DisplayName="{{lg|Stone}} Spear" Tile="Items/Spear.png" ColorString="&amp;b" DetailColor="dg" />
+<part Name="Description" Short="Bands of wood cradle its brother in stone, its jagged rocky claw primed to strike" />
+<part Name="MeleeWeapon" MaxStrengthBonus="2" BaseDamage="1d5" Penetration = "4" />
+<part Name="ThrownWeapon" Penetration="4" Damage="1d5" Attributes="ShortBlades" />
+</object>
+
+<object Name="Player_EvilQud BronzeSpear" Inherits = "Player_EvilQud BaseSpear" BaseDamage = "2d3" MaxStrengthBonus = "12">
+
+<part Name="Render" DisplayName="{{B|Bronze}} Spear" Tile="Items/Spear.png" ColorString="&amp;B" DetailColor="b" />
+<part Name="Description" Short="The arm of a witchwood tree, severed and sanded down to a fine point" />
+<part Name="MeleeWeapon" MaxStrengthBonus="12" BaseDamage="2d3" Penetration = "4" />
+<part Name="ThrownWeapon" Penetration="4" Damage="2d3" Attributes="ShortBlades" />
+</object>
+
+<!-- ***Pikes*** -->
+
+<object Name="Player_EvilQud BrinestalkPike" Inherits="Player_EvilQud BaseSpear" BaseDamage = "1d2" MaxStrengthBonus = "6">
+
+
+<part Name="Render" DisplayName="{{B|Brinestalk}} Pike" Tile="Items/Spear.png" ColorString="&amp;b" DetailColor="B" />
+<part Name="Description" Short="Twine dances hand in hand with its brinestalk friends, paving a long bladed point" />
+<part Name="MeleeWeapon" MaxStrengthBonus="6" BaseDamage="1d2" Penetration = "2" />
+<part Name="ThrownWeapon" Penetration="2" Damage="1" Attributes="ShortBlades" />
+</object>
+
+<object Name="Player_EvilQud WitchwoodPike" Inherits = "Player_EvilQud BaseSpear" BaseDamage = "1d3" MaxStrengthBonus = "6">
+
+<part Name="Render" DisplayName="{{R|Witchwood}} Pike" Tile="Items/Spear.png" ColorString="&amp;r" DetailColor="R" />
+<part Name="Description" Short="A column of a grand witchwood tree, severed and sanded down to a long, fine point" />
+<part Name="MeleeWeapon" MaxStrengthBonus="6" BaseDamage="1d3" Penetration = "3" />
+<part Name="ThrownWeapon" Penetration="3" Damage="2" Attributes="ShortBlades" />
+</object>
+
+<object Name="Player_EvilQud StonePike" Inherits = "Player_EvilQud BaseSpear" BaseDamage = "1d4" MaxStrengthBonus = "">
+
+<part Name="Render" DisplayName="{{lg|Stone}} Spear" Tile="Textures/Spear.png" ColorString="&amp;b" DetailColor="dg" />
+<part Name="Description" Short="The arm of a witchwood tree, severed and sanded down to a fine point" />
+<part Name="MeleeWeapon" MaxStrengthBonus="8" BaseDamage="1d4" Penetration = "4" />
+<part Name="ThrownWeapon" Penetration="4" Damage="2" Attributes="ShortBlades" />
+</object>
+
+<!-- ***Materials*** -->
+
+<object Name="Player_EvilQud Limestone" Inherits = "Player_EvilQud BaseMaterial">
+
+<part Name = "Physics" Weight = "10" />
+<part Name = "Description" Short = "Stony pale flesh was shrewn from a mountainous body" />
+<part Name = "Render" DisplayName="{{Y|Limestone}}" Tile="Items/sw_small_boulder.bmp" ColorString="&amp;y"/>
+
+</object>
+
+<object Name="Player_EvilQud Shale" Inherits = "Player_EvilQud BaseMaterial">
+
+<part Name = "Physics" Weight = "10" />
+<part Name = "Description" Short = "Stony pale flesh was shrewn from a mountainous body" />
+<part Name = "Render" DisplayName="{{lg|Shale}}" Tile="Items/sw_small_boulder.bmp" ColorString="&amp;lg"/>
+
+</object>
+
+<object Name="Player_EvilQud Mudroot" Inherits = "Player_EvilQud BaseMaterial">
+
+<part Name = "Physics" Weight = "5" />
+<part Name = "Description" Short = "Clumps of mud and roots, held together in a tight embrace" />
+<part Name = "Render" DisplayName="{{b|Shale}}" Tile="Items/sw_small_boulder.bmp" ColorString="&amp;b"/>
+
+</object>
+
+
+
+
+<!--
+last line is file end
+-->
+</objects>

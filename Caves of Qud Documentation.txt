@@ -1,0 +1,26 @@
+A| Preliminary Investigation
+
+
+a1| AI Folders
+
+
+
+
+B| XML
+-----
+
+b1 | Color Codes
+
+b2 | Parts overview
+
+
+
+C| Csharp
+--------
+
+libraries needed
+
+functions
+
+
+defining new behaviors
